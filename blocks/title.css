@@ -1,0 +1,13 @@
+.title {
+  margin: 0;
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--title-color);
+  letter-spacing: 11px;
+  text-transform: uppercase;
+}
+
+.title_type_bold {
+  font-weight: 800;
+}

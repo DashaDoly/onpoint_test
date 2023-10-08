@@ -1,0 +1,48 @@
+.switch-box {
+  width: 140px;
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch-box__button {
+  width: 18px;
+  height: 31px;
+}
+
+.switch-box__button_type_forward {
+  background-image: url(../images/btn_next.svg);
+}
+
+.switch-box__button_type_back {
+  background-image: url(../images/btn_back.svg);
+}
+
+.switch-box__dot {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+
+.switch-box__dot_active {
+  background-color: #fc6da9;
+  border: none;
+}
+
+@media all and (max-width: 1024px) {
+  .switch-box {
+    width: 70px;
+  }
+
+  .switch-box__button {
+    width: 9px;
+    height: 15px;
+  }
+
+  .switch-box__dot {
+    height: 10px;
+    width: 10px;
+  }
+}

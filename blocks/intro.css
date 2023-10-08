@@ -1,0 +1,48 @@
+.intro {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 375px;
+  position: relative;
+}
+
+.intro__subtitle {
+  line-height: 47px;
+  margin-bottom: 74px;
+}
+
+.intro__title {
+  width: 100%;
+  font-size: 219px;
+  line-height: 213px;
+}
+
+.intro__button {
+  background-image: url(../images/btn-2.png);
+  position: absolute;
+  right: 131px;
+  bottom: 42px;
+}
+
+@media all and (width: 1024px) {
+  .intro {
+    margin-bottom: 187px;
+    margin-right: 112px;
+  }
+
+  .intro__subtitle {
+    line-height: 25px;
+    margin-bottom: 37px;
+  }
+
+  .intro__title {
+    width: 100%;
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .intro__button {
+    position: absolute;
+    right: 65px;
+    bottom: 21px;
+  }
+}

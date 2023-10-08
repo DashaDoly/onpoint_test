@@ -1,0 +1,18 @@
+.footer__logo {
+  width: 114px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url(../images/logo.svg);
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+@media all and (max-width: 1024px) {
+  .footer__logo {
+    width: 57px;
+    height: 12px;
+  }
+}

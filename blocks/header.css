@@ -1,0 +1,44 @@
+.header {
+  width: 306px;
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 237px;
+  /* margin-bottom: 235px; */
+}
+
+.header__button {
+  width: 45px;
+  height: 40px;
+  background-image: url(../images/icon-home.svg);
+}
+
+.header__line {
+  width: 2px;
+  height: 100%;
+  background-color: var(--main-text-color);
+}
+
+.header__title {
+  font-size: 32px;
+  line-height: normal;
+}
+
+
+@media all and (width: 1024px) {
+  .header {
+    width: 153px;
+    height: 26px;
+    margin-bottom: 113px;
+  }
+
+  .header__button {
+    width: 22px;
+    height: 20px;
+  }
+
+  .header__title {
+    font-size: 16px;
+  }
+}

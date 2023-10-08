@@ -1,0 +1,86 @@
+.scroll-box {
+  width: 1645px;
+  height: 890px;
+  background-color: transparent;
+  overflow-y: scroll;
+  direction: rtl;
+  margin-bottom: 115px;
+  position: relative;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 40px;
+  background-color: transparent;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #000000;
+  background-clip: content-box;
+  border: 15px solid transparent;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  height: 208px;
+  border-radius: 10px;
+  background: url(../images/btn.png) center / cover no-repeat;
+}
+
+.scroll-box__area {
+  width: 1550px;
+  height: 890px;
+  background-color: #fff;
+  border-radius: 70px;
+  border: 3px solid #ecf2f4;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+/* ecf2f4  #f3f7f8*/
+
+.scroll-box__text {
+  width: 1550px;
+  padding: 60px;
+  box-sizing: border-box;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .scroll-box {
+    width: 822px;
+    height: 445px;
+    margin-bottom: 57px;
+  }
+
+  .scroll-box::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  .scroll-box::-webkit-scrollbar-track {
+    border-radius: 2px;
+    border: 7px solid transparent;
+  }
+
+  .scroll-box::-webkit-scrollbar-thumb {
+    height: 104px;
+    border-radius: 5px;
+  }
+
+  .scroll-box__area {
+    width: 775px;
+    height: 445px;
+    border-radius: 35px;
+  }
+
+  /* ecf2f4  #f3f7f8*/
+
+  .scroll-box__text {
+    width: 775px;
+    padding: 30px;
+  }
+}
+

@@ -1,0 +1,19 @@
+.about {
+  width: 100%;
+}
+
+.about__title {
+  width: 362px;
+  margin-bottom: 29px;
+}
+
+@media all and (max-width: 1024px) {
+  .about {
+    margin-right: 132px;
+  }
+  .about__title {
+    width: 181px;
+    margin-bottom: 15px;
+    line-height: 31px;
+  }
+}

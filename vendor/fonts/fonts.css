@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Gilroy'),
+    url('./Gilroy/Gilroy-Light.woff2') format('woff2'),
+    url('./Gilroy/Gilroy-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Gilroy'),
+    url('./Gilroy/Gilroy-Extra-bold.woff2') format('woff2'),
+    url('./Gilroy/Gilroy-Extra-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('DIN Pro'),
+    url('./DIN-Pro/DINPro-Light.woff2') format('woff2'),
+    url('./DIN-Pro/DINPro-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('DIN Pro'),
+    url('./DIN-Pro/DINPro-Bold.woff2') format('woff2'),
+    url('./DIN-Pro/DINPro-Bold.woff') format('woff');
+}
