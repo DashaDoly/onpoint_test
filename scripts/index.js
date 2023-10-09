@@ -19,7 +19,11 @@ returnHeaderBtn.addEventListener('click', function () {
 })
 
 showMainInfoBtn.addEventListener('click', function () {
-  offset += document.documentElement.clientWidth;
+  if (document.documentElement.clientWidth === 2048) {
+    offset += document.documentElement.clientWidth;
+  } else {
+    offset += 1024;
+  }
   sliderLine.style.left = -offset + 'px';
 });
 
@@ -56,18 +60,23 @@ function handleTouchMove(evt) {
       console.log('right')
       if (offset === 0) {
         return
-      } else {
+      } if (document.documentElement.clientWidth === 2048) {
         offset -= document.documentElement.clientWidth;
-        sliderLine.style.left = -offset + 'px';
+      } else {
+        offset -= 1024;
       }
+      sliderLine.style.left = -offset + 'px';
+
     } else {
       console.log('left')
       if (offset === breakPoint) {
         return
-      } else {
+      } if (document.documentElement.clientWidth === 2048) {
         offset += document.documentElement.clientWidth;
-        sliderLine.style.left = -offset + 'px';
+      } else {
+        offset += 1024;
       }
+      sliderLine.style.left = -offset + 'px';
     }
   } else {
     return false;
