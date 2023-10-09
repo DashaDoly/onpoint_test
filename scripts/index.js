@@ -1,3 +1,5 @@
+const sliderLine = document.querySelector('.page__slider');
+const returnHeaderBtn = document.querySelector('.header__button');
 const showMainInfoBtn = document.querySelector('.intro__button');
 const openPopupBtn = document.querySelector('.main-content__button');
 const popupInfo = document.querySelector('.popup');
@@ -7,9 +9,8 @@ const prevBtnDot = document.querySelector('.switch-box__dot_type_back');
 const nextBtnDot = document.querySelector('.switch-box__dot_type_forward');
 const listPrev = document.querySelector('.list_page_1');
 const listNext = document.querySelector('.list_page_2');
-const returnHeaderBtn = document.querySelector('.header__button');
 
-const sliderLine = document.querySelector('.page__container');
+// прокрутка при нажатии на кнопку
 let offset = 0;
 
 returnHeaderBtn.addEventListener('click', function () {
@@ -17,18 +18,12 @@ returnHeaderBtn.addEventListener('click', function () {
   sliderLine.style.left = offset;
 })
 
-document.querySelector('.intro__button').addEventListener('click', function () {
+showMainInfoBtn.addEventListener('click', function () {
   offset += document.documentElement.clientWidth;
   sliderLine.style.left = -offset + 'px';
-  // window.scrollTo({top: 0, left: document.documentElement.clientWidth, behavior: "smooth"})
 });
 
-document.querySelector('.about__title').addEventListener('click', function () {
-  offset += document.documentElement.clientWidth;
-  sliderLine.style.left = -offset + 'px';
-  // window.scrollTo({top: 0, left: document.documentElement.clientWidth, behavior: "smooth"})
-});
-
+// горизонтальный свайп
 document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
 
@@ -53,7 +48,7 @@ function handleTouchMove(evt) {
   let xDiff = x2 - x1;
   let yDiff = y2 - y1;
 
-  breakPoint = 2 * document.documentElement.clientWidth;
+  let breakPoint = 2 * document.documentElement.clientWidth;
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
     // right - left
@@ -76,14 +71,12 @@ function handleTouchMove(evt) {
     }
   } else {
     return false;
-    // if (yDiff > 0) console.log('down');
-    // else console.log('top');
   }
   x1 = null;
   y1 = null;
-
 }
 
+// кнопка переключения
 showNextBtn.addEventListener('click', onSwitchBtnClick);
 showPrevBtn.addEventListener('click', onSwitchBtnClick);
 
@@ -99,7 +92,7 @@ function onSwitchBtnClick() {
   listNext.classList.toggle('list_active');
 }
 
-
+// открытие, закрытие попапа
 openPopupBtn.addEventListener('click', function () {
   openPopup(popupInfo)
 });

@@ -1,8 +1,11 @@
 .intro {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 375px;
-  position: relative;
+  background:
+    url('../images/intro/Layer_7.png') top 145px right 1797px / 428px 231px no-repeat,
+    url('../images/intro/pink_sperm.png') top 1186px right 1489px / 827px 366px no-repeat,
+    url('../images/intro/pink_sperm_1.png') top 310px left 865px / 1183px 185px no-repeat,
+    url('../images/intro/Layer_4.1.png') top 1262px left 695px / 169px 155px no-repeat,
+    url('../images/intro/Layer_4.2.png') top 60px right 72px / 142px 137px no-repeat,
+    url('../images/bg-full.jpg') top left /cover no-repeat;
 }
 
 .intro__subtitle {
@@ -20,13 +23,89 @@
   background-image: url(../images/btn-2.png);
   position: absolute;
   right: 131px;
-  bottom: 42px;
+  /* bottom: 42px; */
 }
+
+.intro__animation-1 {
+  width: 146px;
+  height: 142px;
+  position: absolute;
+  top: 1007px;
+  left: 45px;
+  background: url('../images/intro/bakti_1.png') center/cover no-repeat;
+}
+
+.intro__animation-4 {
+  width: 455px;
+  height: 446px;
+  position: absolute;
+  top: 1283px;
+  left: 1084px;
+  background: url('../images/intro/Layer_4.png') center/cover no-repeat;
+}
+
+.intro__animation-5 {
+  width: 125px;
+  height: 114px;
+  position: absolute;
+  top: 123px;
+  left: 1489px;
+  background: url('../images/intro/Layer_5.png') center/cover no-repeat;
+}
+
+.intro__animation-8 {
+  width: 221px;
+  height: 227px;
+  position: absolute;
+  top: 401px;
+  left: 1723px;
+  background: url('../images/intro/Layer_8.png') center/cover no-repeat;
+}
+
+@media all and (max-width: 1024px) {
+  .intro__animation-1 {
+    width: 73px;
+    height: 71px;
+    position: absolute;
+    top: 503px;
+    left: 22px;
+  }
+
+  .intro__animation-4 {
+    width: 227px;
+    height: 223px;
+    position: absolute;
+    top: 641px;
+    left: 542px;
+  }
+
+  .intro__animation-5 {
+    width: 62px;
+    height: 57px;
+    position: absolute;
+    top: 61px;
+    left: 744px;
+  }
+
+  .intro__animation-8 {
+    width: 110px;
+    height: 113px;
+    position: absolute;
+    top: 200px;
+    left: 861px;
+  }
+}
+
 
 @media all and (width: 1024px) {
   .intro {
-    margin-bottom: 187px;
-    margin-right: 112px;
+    background:
+      url('../images/intro/Layer_7.png') top 72px right 898px / 214px 115px no-repeat,
+      url('../images/intro/pink_sperm.png') top 593px right 744px / 413px 183px no-repeat,
+      url('../images/intro/pink_sperm_1.png') top 155px left 432px / 591px 92px no-repeat,
+      url('../images/intro/Layer_4.1.png') top 631px left 347px / 85px 77px no-repeat,
+      url('../images/intro/Layer_4.2.png') top 30px right 36px / 71px 68px no-repeat,
+      url('../images/bg-full.jpg') top left -83px /cover no-repeat;
   }
 
   .intro__subtitle {
@@ -43,6 +122,7 @@
   .intro__button {
     position: absolute;
     right: 65px;
-    bottom: 21px;
+    top: 435px;
+    /* bottom: 21px; */
   }
 }

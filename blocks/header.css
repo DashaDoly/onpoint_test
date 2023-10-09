@@ -6,6 +6,10 @@
   align-items: center;
   margin-bottom: 237px;
   /* margin-bottom: 235px; */
+  position: fixed;
+  top: 25px;
+  left: 70px;
+  z-index: 4;
 }
 
 .header__button {

@@ -9,49 +9,28 @@
     <script src="./scripts/index.js" defer></script>
 </head>
 <body class="page">
-  <div class="page__container page__container_bg_intro">
-<!-- page__container_bg_intro -->
-    <div class="animation ">
-      <div class="page__animation-1 rotation"></div>
-      <div class="page__animation-4 rotation"></div>
-      <div class="page__animation-5 rotation"></div>
-      <div class="page__animation-8 rotation"></div>
-    </div>
-
-    <div class="animation">
-      <div class="page__animation-sperm"></div>
-      <div class="page__animation-sperm-1"></div>
-      <div class="page__animation-sperm-2"></div>
-      <div class="page__animation-sperm-3"></div>
-      <div class="page__animation-sperm-4"></div>
-    </div>
-
-    <div class="animation">
-      <div class="animation__bottle"></div>
-      <div class="page__animation-bubble"></div>
-      <div class="page__animation-bubble-1"></div>
-      <div class="page__animation-bubble-2"></div>
-      <div class="page__animation-bubble-3"></div>
-      <div class="page__animation-bubble-4"></div>
-      <div class="page__animation-bubble-5"></div>
-      <div class="page__animation-bubble-6"></div>
-      <div class="page__animation-bubble-7"></div>
-    </div>
-
-
-    <header class="header">
-      <button type="button" class="header__button button" aria-label="Возращение на главную страницу"></button>
-      <div class="header__line"></div>
-      <p class="header__title text text_uppercase">project</p>
-    </header>
-
-    <main class="main-info">
-      <section class="intro">
+  <div class="page__container">
+    <div class="page__slider">
+      <header class="header">
+        <button type="button" class="header__button button" aria-label="Возращение на главную страницу"></button>
+        <div class="header__line"></div>
+        <p class="header__title text text_uppercase">project</p>
+      </header>
+      <section class="intro page__section">
+        <div class="intro__animation-1 rotation"></div>
+        <div class="intro__animation-4 rotation"></div>
+        <div class="intro__animation-5 rotation"></div>
+        <div class="intro__animation-8 rotation"></div>
         <p class="intro__subtitle text text_uppercase">привет,</p>
         <h1 class="intro__title title">это <span class="title_type_bold">не</span> коммерческое задание</h1>
         <button type="button" class="intro__button button button_type_main text" aria-label="Что дальше">Что дальше?</button>
       </section>
-      <section class="about">
+      <section class="about page__section">
+        <div class="about__animation-sperm move"></div>
+        <div class="about__animation-sperm-1 move"></div>
+        <div class="about__animation-sperm-2 move"></div>
+        <div class="about__animation-sperm-3 move"></div>
+        <div class="about__animation-sperm-4 move"></div>
         <h2 class="about__title text text_uppercase">тест сообщения</h2>
         <div class="scroll-box">
           <div class="scroll-box__area"></div>
@@ -75,7 +54,16 @@
             </p>
         </div>
       </section>
-      <section class="main-content">
+      <section class="main-content page__section">
+        <div class="main-content__animation-bottle"></div>
+        <div class="main-content__animation-bubble pulse"></div>
+        <div class="main-content__animation-bubble-1 pulse"></div>
+        <div class="main-content__animation-bubble-2 pulse"></div>
+        <div class="main-content__animation-bubble-3 pulse"></div>
+        <div class="main-content__animation-bubble-4 pulse"></div>
+        <div class="main-content__animation-bubble-5 pulse"></div>
+        <div class="main-content__animation-bubble-6 pulse"></div>
+        <div class="main-content__animation-bubble-7 pulse"></div>
         <p class="main-content__subtitle text text_uppercase">ключевое сообщение</p>
         <h2 class="main-content__title title">brend<span class="title_type_bold">xy</span></h2>
         <div class="main-content__info">
@@ -95,12 +83,10 @@
           <button type="button" class="main-content__button button button_type_main text">Подробнее</button>
         </div>
       </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__logo"></div>
-    </footer>
-
+      <footer class="footer">
+        <div class="footer__logo"></div>
+      </footer>
+    </div>
     <div class="popup">
       <div class="popup__container">
         <button type="button" class="popup__close-button button"></button>
@@ -143,6 +129,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

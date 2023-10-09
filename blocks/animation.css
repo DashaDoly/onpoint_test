@@ -1,0 +1,26 @@
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
+@keyframes pulse {
+  from {transform: scale(1);}
+  to {transform: scale(1.2);}
+}
+
+.pulse {
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}
+
+.move {
+  animation: move 3s ease infinite forwards;
+}
