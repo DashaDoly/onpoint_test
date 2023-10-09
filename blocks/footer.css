@@ -13,7 +13,7 @@
   background-size: cover;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .footer {
     position: fixed;
     top: 743px;

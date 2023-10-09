@@ -50,7 +50,7 @@
   right: 0;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .scroll-box {
     width: 822px;
     height: 445px;

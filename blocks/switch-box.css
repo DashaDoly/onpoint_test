@@ -31,7 +31,7 @@
   border: none;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .switch-box {
     width: 70px;
   }

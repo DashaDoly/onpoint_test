@@ -35,7 +35,7 @@
   grid-area: button;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .main-content__subtitle {
     line-height: 25px;
     margin-left: 284px;
@@ -148,7 +148,7 @@
   z-index: 1;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .main-content__animation-bottle {
     width: 240px;
     height: 697px;

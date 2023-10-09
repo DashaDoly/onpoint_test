@@ -12,7 +12,7 @@
   text-transform: uppercase;
 }
 
-@media all and (width: 1024px) {
+@media all and (max-width: 2047px) {
   .text {
     font-size: 27px;
   }

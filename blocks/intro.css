@@ -62,7 +62,7 @@
   background: url('../images/intro/Layer_8.png') center/cover no-repeat;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .intro__animation-1 {
     width: 73px;
     height: 71px;
@@ -96,8 +96,7 @@
   }
 }
 
-
-@media all and (width: 1024px) {
+@media all and (max-width: 2047px) {
   .intro {
     background:
       url('../images/intro/Layer_7.png') top 72px right 898px / 214px 115px no-repeat,

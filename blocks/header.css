@@ -30,7 +30,7 @@
 }
 
 
-@media all and (width: 1024px) {
+@media all and (max-width: 2047px) {
   .header {
     width: 153px;
     height: 26px;

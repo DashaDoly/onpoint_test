@@ -11,7 +11,6 @@
   min-width: 1024px;
   max-height: 1536px;
   min-height: 768px;
-  margin: 0 auto;
   /* background: url('../images/bg-full.jpg') top left -83px /cover no-repeat; */
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +37,7 @@
 }
 
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 2047px) {
   .page__section {
     padding: 164px 42px 25px 70px;
   }
